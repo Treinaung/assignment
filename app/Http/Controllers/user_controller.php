@@ -77,5 +77,55 @@ class user_controller extends Controller
         return view('store', ['name' => 'Hello', 'restaurants' => $restaurants]);
     }
 
+    public function get_menu() {
+        $restaurants = Restaurant::get();
+        return response()->json([
+            'message'=>'Restaurant_Menu',
+            'status'=>'success',
+            'resturants'=> $restaurants
+        ]);
+    }
+    
+            public function update_menu($id, Request $request) {
+            $incomingFields = $request->validate ([
+                'name'=> 'required',
+                'type' => 'required'
+            ]);
+            $restaurants=Restaurant::find($id);
+            $restaurants->name=$request->name;
+            $restaurants->type=$request->type;
+            $restaurants->save();
+
+            return response()->json([
+                'message'=>'Resturant updated',
+                'data'=>$restaurants
+            ]);
+        }
+        public function create_menu(Request $request) {
+        $restaurants = new Restaurant();
+        Restaurant::create([
+            'name'=> $request->name,
+            'type'=> $request->type,
+        ]);
+
+        return response()->json([
+            'message'=>'Restaurant',
+            'status'=>'success',
+            'restaurant'=>$restaurants
+        ]);
+
+        
+        
+        }
+
+        public function delete_menu($id) {
+            $restaurant = Restaurant::find($id);
+            $restaurant->delete();
+
+            return response()->json([
+                'message'=> "Deleted"
+            ]);
+        }
+
 
 }

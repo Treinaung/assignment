@@ -24,7 +24,7 @@
   </style>
     <title>Document</title>
 </head>
-<body class="bg-gray-700">
+<body class="bg-gray-900">
     <nav class="bg-gray-800">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div class="relative flex h-16 items-center justify-between">
@@ -150,33 +150,9 @@
         </table> --}}
 
         <div class="mt-10 flex items-center justify-center gap-x-6">
-      
           <form class="bg-gray-100 shadow-md rounded px-8 pt-6 pb-8 mb-4" action="/register" method="POST">
             @csrf
-            <h2 class="text-2xl text-center"><b>Register</b></h2><br>
-    
-            {{-- <div class="flex flex-wrap -mx-3 mb-6 ">
-              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-name">
-                  Name
-                </label>
-                <input required name="name" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-500 focus:shadow-outline" id="grid-first-name" type="text" placeholder="Name">          
-              </div>
-              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-type">
-                  Type
-                </label>
-                <input required name="type" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-500 focus:shadow-outline" id="grid-last-name" type="text" placeholder="Type">
-              </div>
-            </div>
-            
-            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-                Register
-              </button>  
-            </div><br>   --}}
-    
-            
+            <h2 class="text-2xl text-center"><b>Register</b></h2><br>      
             <div class="mb-4">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
               Name

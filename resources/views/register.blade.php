@@ -102,52 +102,6 @@
         </div>
       </nav>
 
-      {{-- <h2 class="text-2xl text-center"><b>Register</b></h2><br>
-        <div class="flex flex-wrap -mx-3 mb-6 ">
-          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-name">
-              Name
-            </label>
-            <input name="name" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Name">
-            
-          </div>
-          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-type">
-              Type
-            </label>
-            <input name="type" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Type">
-          </div>
-        </div> --}}
-
-        {{-- <table class="table-auto">
-          @foreach($restaurants as $restaurant)
-          <thead>
-            <tr>
-              <th>Id</th>
-              <th>Name</th>
-              <th>Type</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td></td>
-              <td><p class="text-1xl font-semibold leading-6 text-white">{{ $restaurant->name}}</p></td>
-              <td><p class="text-2xl mt-1 truncate text-xs leading-5 text-white">{{ $restaurant->type }}</p></td>
-              <td>
-                  <a href="/edit/{{$restaurant->id}}" class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Edit</a>
-                      <form action="/delete/{{$restaurant->id}}" method="Post">
-                          @csrf
-                          @method('DELETE')
-                          <button class="rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"><p>Delete</p></button>
-                          <button></button><button></button>
-                      </form>
-              </td>
-            </tr>
-            
-          </tbody>
-          @endforeach
-        </table> --}}
 
         <div class="mt-10 flex items-center justify-center gap-x-6">
           <form class="bg-gray-100 shadow-md rounded px-8 pt-6 pb-8 mb-4" action="/register" method="POST">

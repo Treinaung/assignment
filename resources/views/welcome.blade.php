@@ -35,7 +35,7 @@
   }
 </style>
     </head>
-    <body class="antialiased">
+    <body class="antialiased bg-gray-900">
         <nav class="bg-gray-800">
             <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
               <div class="relative flex h-16 items-center justify-between">
@@ -71,9 +71,9 @@
                       <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                       <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Restaurant</a>
                       <a href="/home" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Home</a>
-                      <a href="/store" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Store</a>
-                      <a href="/register" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Register</a>
-                      <a href="/about" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>    
+                      {{-- <a href="/store" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Store</a>
+                      <a href="/register" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Register</a> --}}
+                      {{-- <a href="/about" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>     --}}
                     </div>
                   </div>
                 </div>
@@ -106,9 +106,9 @@
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                 <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Restaurant</a>
                 <a href="/home" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Home</a>
-                <a href="/store" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Store</a>
-                <a href="/register" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Register</a>
-                <a href="/about" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
+                {{-- <a href="/store" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Store</a>
+                <a href="/register" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Register</a> --}}
+                {{-- <a href="/about" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a> --}}
               </div>
             </div>
           </nav>
@@ -236,7 +236,7 @@
         <div class="mt-10 flex items-center justify-center gap-x-6">
             <form class="bg-gray-100 shadow-md rounded px-8 pt-6 pb-8 mb-4" action="/userRegister" method="POST">
               @csrf
-              <h2 class="text-2xl text-center"><b>Register</b></h2><br>      
+              <h2 class="text-2xl text-center"><b>User Register</b></h2><br>      
               <div class="mb-4">
               <label class="block text-gray-700 text-sm font-bold mb-2" >
                 Name

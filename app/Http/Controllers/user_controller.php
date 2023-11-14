@@ -24,6 +24,8 @@ class user_controller extends Controller
             
         ]);
 
+        
+
         $item = Restaurant::create ([
             'name' => $request->input('name'),
             'type' =>  $request->input('type')

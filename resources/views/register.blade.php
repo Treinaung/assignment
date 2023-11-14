@@ -1,30 +1,4 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-  </script>
-  <style type="text/tailwindcss">
-    @layer utilities {
-      .content-auto {
-        content-visibility: auto;
-      }
-    }
-  </style>
-    <title>Document</title>
-</head>
-<body class="bg-gray-900">
+<div class="bg-gray-900">
   @extends('layout.layout')
   @section('content')
         <div class="mt-10 flex items-center justify-center gap-x-6">
@@ -61,6 +35,6 @@
           </div>    
         </form>
       </div> 
-</body>
-</html>
+    </div>
+
 @endsection

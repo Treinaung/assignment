@@ -24,7 +24,7 @@
   </style>
     <title>Document</title>
 </head>
-<body>
+<body class="bg-gray-900">
     <nav class="bg-gray-800">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div class="relative flex h-16 items-center justify-between">
@@ -100,7 +100,7 @@
             <a href="/about" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
           </div>
         </div>
-      </nav><br>
+      </nav>
 
       <div class="relative isolate px-6 pt-14 lg:px-8">
         <!-- Your content for the home page can go here -->
